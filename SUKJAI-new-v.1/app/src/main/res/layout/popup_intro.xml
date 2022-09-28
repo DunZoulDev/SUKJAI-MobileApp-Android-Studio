@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".popup_intro">
+
+    <RelativeLayout
+        android:layout_width="336dp"
+        android:layout_height="440dp"
+        android:background="@drawable/bgpopup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        >
+
+        <TextView
+            android:id="@+id/popup_intro_closeq"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ic_close" />
+
+        <ImageView
+            android:id="@+id/popup_intro_img"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/popup_intrto_img_1" />
+
+        <TextView
+            android:id="@+id/popup_intro_description"
+            android:layout_width="256dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/popup_intro_img"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/ekkamai"
+            android:lineSpacingExtra="10sp"
+            android:text="ทำบุญแบบครบครันตามหลัก\nบุญกริยาวัตถุ 10 ประการ"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/popup_intro_sliding"
+            android:layout_width="105dp"
+            android:layout_height="115dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="-18dp"
+            android:src="@drawable/popup_intrto_slide_1" />
+
+        <ImageView
+            android:id="@+id/popup_intro_next"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/popup_intrto_next" />
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

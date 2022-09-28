@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PD_donation">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="393dp"
+        android:layout_height="72dp"
+        android:background="@drawable/top_bar_color"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/back"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/icon_schedule_back" />
+
+
+        <TextView
+            android:layout_width="199dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/fcminimalregular"
+            android:text="  บริจาค"
+            android:textColor="@color/blackLime"
+            android:textSize="35sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:scrollbarSize="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient_1"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <SearchView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/search"
+                    android:iconifiedByDefault="false"
+                    android:queryBackground="@null"
+                    android:queryHint="ค้นหาแหล่งบริจาค..." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="154dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/fc_friday_medium"
+                    android:text="หมวดหมู่บริจาค"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/blackLime"
+                    android:textSize="28sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/gtemple"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/pd_donation_topic_1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="4dp"
+                            android:text="วัด"
+                            android:textColor="@color/blackLime"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/ghospital"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/pd_donation_topic_2" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="4dp"
+                            android:text="โรงพยาบาล"
+                            android:textAlignment="center"
+                            android:textColor="@color/blackLime"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/gschool"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/pd_donation_topic_3" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="37dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="4dp"
+                            android:text="โรงเรียน"
+                            android:textAlignment="center"
+                            android:textColor="@color/blackLime"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/fc_friday_medium"
+                    android:text="แนะนำสำหรับคุณ"
+                    android:textColor="@color/blackLime"
+                    android:textSize="28dp" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbarSize="0dp"
+                    tools:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp">
+
+                        <ImageButton
+                            android:layout_width="191dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/c2" />
+
+                        <ImageButton
+                            android:layout_width="192dp"
+                            android:layout_height="250dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/c1" />
+
+                        <ImageButton
+                            android:layout_width="192dp"
+                            android:layout_height="250dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/c3" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="850dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/gradient_2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/fc_friday_medium"
+                    android:text="ทั้งหมด"
+                    android:textColor="@color/blackLime"
+                    android:textSize="28dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="879dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageButton
+                        android:layout_width="349dp"
+                        android:layout_height="115dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/temp1" />
+
+                    <ImageButton
+                        android:layout_width="349dp"
+                        android:layout_height="115dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/hos2" />
+
+                    <ImageButton
+                        android:layout_width="349dp"
+                        android:layout_height="115dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/temp2" />
+
+                    <ImageButton
+                        android:layout_width="349dp"
+                        android:layout_height="115dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/temp3" />
+
+                    <ImageButton
+                        android:layout_width="349dp"
+                        android:layout_height="115dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/hosp4" />
+
+                    <ImageButton
+                        android:layout_width="349dp"
+                        android:layout_height="115dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="30dp"
+                        android:background="@drawable/hos1" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

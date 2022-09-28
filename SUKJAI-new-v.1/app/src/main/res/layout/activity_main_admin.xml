@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main__admin"
+    android:background="@drawable/bgprofile">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bgtextlogin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/supermarket"
+                android:text="ระบบจัดการสำหรับผู้ดูแล"
+                android:textColor="@color/black_blue_text"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView13"
+                android:layout_alignStart="@+id/textView13"
+                android:layout_alignLeft="@+id/textView13"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="-5dp"
+                android:fontFamily="@font/supermarket"
+                android:text="ผู้ดูแลสามารถอัปโหลดเนื้อหาตามประเภท"
+                android:textColor="#767171"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/add_OD"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal"
+                android:elevation="5dp"
+                android:translationZ="5dp"
+                android:background="@drawable/bgtextlogin">
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:elevation="5dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:translationZ="5dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView13"
+                        android:layout_alignStart="@+id/textView13"
+                        android:layout_alignLeft="@+id/textView13"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/supermarket"
+                        android:text="หมวดหมู่"
+                        android:textColor="#767171"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="@font/supermarket"
+                        android:text="Online Dharma "
+                        android:textColor="@color/black_blue_text"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:translationZ="5dp">
+
+                    <Button
+                        android:id="@+id/next_OD"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="30dp"
+                        android:rotation="180"
+                        android:background="@drawable/icon_schedule_back" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/add_PD"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal"
+                android:elevation="5dp"
+                android:translationZ="5dp"
+                android:background="@drawable/bgtextlogin">
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:elevation="5dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:translationZ="5dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView13"
+                        android:layout_alignStart="@+id/textView13"
+                        android:layout_alignLeft="@+id/textView13"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/supermarket"
+                        android:text="หมวดหมู่"
+                        android:textColor="#767171"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="@font/supermarket"
+                        android:text="Personalized Donation"
+                        android:textColor="@color/black_blue_text"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:translationZ="5dp">
+
+                    <Button
+                        android:id="@+id/next_PD"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="30dp"
+                        android:rotation="180"
+                        android:background="@drawable/icon_schedule_back" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/add_DM"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal"
+                android:elevation="5dp"
+                android:translationZ="5dp"
+                android:background="@drawable/bgtextlogin">
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:elevation="5dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:translationZ="5dp">
+
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView13"
+                        android:layout_alignStart="@+id/textView13"
+                        android:layout_alignLeft="@+id/textView13"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/supermarket"
+                        android:text="หมวดหมู่"
+                        android:textColor="#767171"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="@font/supermarket"
+                        android:text="Digital Merit Activities"
+                        android:textColor="@color/black_blue_text"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:translationZ="5dp">
+
+                    <Button
+                        android:id="@+id/next_DM"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="30dp"
+                        android:rotation="180"
+                        android:background="@drawable/icon_schedule_back" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <Button
+                    android:id="@+id/dataAdmin"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Password"
+                    android:layout_alignStart="@+id/Password"
+                    android:layout_alignLeft="@+id/Password"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/buttonlogin"
+                    android:fontFamily="@font/supermarket"
+                    android:text="ข้อมูลผู้ดูแล"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    app:backgroundTint="@color/black_blue_text" />
+
+                <Button
+                    android:id="@+id/logout"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/login"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bgtextregis"
+                    android:fontFamily="@font/supermarket"
+                    android:text="ออกจากระบบ"
+                    android:textColor="@color/gray_text"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

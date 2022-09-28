@@ -1,0 +1,39 @@
+package com.example.SUKJAI;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+public class Pd_donation_school extends AppCompatActivity {
+    static public String ID_USER;
+    Button back;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_pd_donation_school);
+
+        back = findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Pd_donation_school.this, PD_donation.class);
+                startActivity(i);
+                return ;
+
+            }
+        });
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(getApplicationContext(),PD_donation.class);
+        intent.putExtra("user_id",ID_USER);
+        startActivity(intent);
+        finish();
+    }
+}

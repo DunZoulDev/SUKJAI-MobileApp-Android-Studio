@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.SUKJAI" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/gold_brown_icon</item>
+        <item name="colorPrimaryDark">@color/mango_bar</item>
+        <item name="colorAccent">@color/gold_brown_icon</item>
+        <item name="android:statusBarColor">@color/brown_word</item>
+        <item name="font">@font/fc_subject_regular</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

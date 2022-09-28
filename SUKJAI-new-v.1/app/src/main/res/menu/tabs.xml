@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="หน้าหลัก"
+        android:icon="@drawable/selector_home" />
+    <item
+        android:id="@+id/od"
+        android:title="ธรรมะ"
+        android:icon="@drawable/selector_od"/>
+    <item
+        android:id="@+id/pd"
+        android:title="บริจาค"
+        android:icon="@drawable/selector_pd"/>
+    <item
+        android:id="@+id/ac"
+        android:title="กิจกรรม"
+        android:icon="@drawable/selector_dm"/>
+    <item
+        android:id="@+id/menu"
+        android:title="เมนู"
+        android:icon="@drawable/selector_other"/>
+</menu>

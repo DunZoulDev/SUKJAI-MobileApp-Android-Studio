@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PD_volunteer">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="393dp"
+        android:layout_height="72dp"
+        android:background="@drawable/top_bar_color"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/back"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/icon_schedule_back" />
+
+
+        <TextView
+            android:layout_width="199dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/fcminimalregular"
+            android:text="  จิตอาสา"
+            android:textColor="@color/blackLime"
+            android:textSize="35sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:scrollbarSize="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient_1"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <SearchView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/search"
+                    android:iconifiedByDefault="false"
+                    android:queryBackground="@null"
+                    android:queryHint="อยากทำจิตอาสา..." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="172dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/fc_friday_medium"
+                    android:text="หมวดหมู่จิตอาสา"
+                    android:textColor="@color/blackLime"
+                    android:textSize="28sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/topic_know"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/pd_volunteertopic_topic_1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="4dp"
+                            android:text="อาสาให้ความรู้"
+                            android:textColor="@color/blackLime"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/topic_put"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/pd_volunteertopic_topic_2" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="4dp"
+                            android:text="พุทธอาสา"
+                            android:textAlignment="center"
+                            android:textColor="@color/blackLime"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/topic_online"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/pd_volunteertopic_topic_3" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="37dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="4dp"
+                            android:text="อาสาออนไลน์"
+                            android:textAlignment="center"
+                            android:textColor="@color/blackLime"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/topic_offline"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/pd_volunteertopic_topic_4" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="4dp"
+                            android:text="อาสา      ลงพื้นที่"
+                            android:textAlignment="center"
+                            android:textColor="@color/blackLime"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/fc_friday_medium"
+                    android:text="แบ่งปันความรู้"
+                    android:textColor="@color/blackLime"
+                    android:textSize="28dp" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbarSize="0dp"
+                    tools:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:layout_width="225dp"
+                            android:layout_height="295dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/pd_volunteer_knowladge_1" />
+
+                        <ImageButton
+                            android:layout_width="225dp"
+                            android:layout_height="295dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/pd_volunteer_knowladge_2" />
+
+                        <ImageButton
+                            android:layout_width="225dp"
+                            android:layout_height="295dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/pd_volunteer_knowladge_3" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="800dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/fc_friday_medium"
+                    android:text="จิตอาสาออนไลน์"
+                    android:textColor="@color/blackLime"
+                    android:textSize="28dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="กิจกรรมโฉมใหม่ คุ้มค่าการรอคอย!"
+                    android:textColor="@color/blackLime"
+                    android:textSize="12dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="135dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/pd_volunteer_online_1" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="135dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/pd_volunteer_online_2" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="135dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/pd_volunteer_online_3" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="135dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/pd_volunteer_online_4" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="135dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/pd_volunteer_online_5" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="489dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/fc_friday_medium"
+                    android:text="จิตอาสาที่ยังเปิดรับสมัคร"
+                    android:textColor="@color/blackLime"
+                    android:textSize="28dp" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="452dp"
+                    android:scrollbarSize="2dp"
+                    tools:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="135dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/pd_volunteer_offline_1" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="135dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/pd_volunteer_offline_2" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="135dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/pd_volunteer_offline_3" />
+
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/fc_friday_medium"
+                    android:text="พุทธอาสา"
+                    android:textColor="@color/blackLime"
+                    android:textSize="28dp" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbarSize="0dp"
+                    tools:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:layout_width="225dp"
+                            android:layout_height="295dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/pd_volunteer_putta_1" />
+
+                        <ImageButton
+                            android:layout_width="225dp"
+                            android:layout_height="295dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/pd_volunteer_putta_2" />
+
+                        <ImageButton
+                            android:layout_width="225dp"
+                            android:layout_height="295dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/pd_volunteer_putta_3" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

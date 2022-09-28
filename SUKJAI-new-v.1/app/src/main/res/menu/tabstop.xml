@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/sd"
+        android:icon="@drawable/menu_icon_calendar_line_1"
+        android:title="@string/schedule"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/noti"
+        android:icon="@drawable/menu_icon_bell_line"
+        android:title="@string/notification"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/pr"
+        android:title="@string/profile"
+        android:icon="@drawable/user_profile"
+        app:showAsAction="always"/>
+</menu>

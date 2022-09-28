@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="NewFontStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/fc_subject_regular</item>
+        <item name="android:textSize">-25sp</item>
+    </style>
+
+    <style name="NewStyle">
+        <item name="android:fontFamily">@font/fc_subject_regular</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+</resources>

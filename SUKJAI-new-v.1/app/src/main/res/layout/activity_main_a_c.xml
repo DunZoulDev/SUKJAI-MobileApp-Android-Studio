@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_main_fade"
+    tools:context=".main_AC">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@drawable/top_bar_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imagenavi"
+            android:layout_width="84dp"
+            android:layout_height="38dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/sukjai_logo_home_text_rebrand" />
+
+        <Button
+            android:id="@+id/bt_schedual"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_toStartOf="@+id/bt_notication"
+            android:background="@drawable/schedule_b" />
+
+        <Button
+            android:id="@+id/bt_notication"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/bt_user"
+            android:background="@drawable/bell_b" />
+
+        <Button
+            android:id="@+id/bt_user"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/pro_b" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="52dp"
+        android:scrollbarSize="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_gray_bg"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <SearchView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/search"
+                    android:iconifiedByDefault="false"
+                    android:queryBackground="@null"
+                    android:queryHint="ค้นหากิจกรรม..." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="248dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fc_friday_medium"
+                    android:text="หมวดหมู่"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:textColor="@color/blackLime"
+                    android:textSize="28sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="94dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp">
+
+                    <LinearLayout
+                        android:layout_width="170dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/ac_topic_visit"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/fcminimalbold"
+                            android:gravity="center_vertical"
+                            android:text="เยี่ยมชม"
+                            android:textColor="@color/White"
+                            android:textSize="40sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="170dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/ac_topic_activity"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/fcminimalbold"
+                            android:gravity="center_vertical"
+                            android:text="กิจกรรม"
+                            android:textColor="@color/White"
+                            android:textSize="40sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="94dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp">
+
+                    <LinearLayout
+                        android:layout_width="170dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/ac_topic_360"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/fcminimalbold"
+                            android:gravity="center_vertical"
+                            android:text="360°"
+                            android:textColor="@color/White"
+                            android:textSize="40sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="170dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/ac_topic_pray"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/fcminimalbold"
+                            android:gravity="center_vertical"
+                            android:text="สวดมนต์"
+                            android:textColor="@color/White"
+                            android:textSize="40sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bgcolor_1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fcminimalbold"
+                    android:layout_marginLeft="20dp"
+                    android:text="รู้หรือไม่"
+                    android:paddingLeft="10dp"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="354dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:fontFamily="@font/fcminimalregular"
+                    android:text="เวียนเทียน เป็นการให้พุทธศาสนิกชนตระหนักถึงสังสารวัฏ              ทุกอย่างเกิดขึ้น ตั้งอยู่ และดับไป เหมือนอย่างที่เราเดินเป็นวงกลม"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fc_friday_medium"
+                    android:text="เยี่ยมชมสถานที่ 360°"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/blackLime"
+                    android:textSize="28sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="225dp"
+                    android:scrollbarSize="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="225dp"
+                        android:layout_marginStart="20dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/visit_1"
+                                style="@style/Widget.AppCompat.Button.Borderless"
+                                android:layout_width="308dp"
+                                android:layout_height="173.36dp"
+                                android:background="@drawable/cover_place_1_sathira"
+                                android:fontFamily="@font/supermarket"
+                                android:textColor="#FFFFFF"
+                                android:textSize="22sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/supermarket"
+                                android:text="เสถียรธรรมสถาน"
+                                android:textColor="@color/blackLime"
+                                android:textSize="20sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/visit_2"
+                                style="@style/Widget.AppCompat.Button.Borderless"
+                                android:layout_width="308dp"
+                                android:layout_height="173.36dp"
+                                android:background="@drawable/cover_place_2_watchol"
+                                android:fontFamily="@font/supermarket"
+                                android:textColor="#FFFFFF"
+                                android:textSize="22sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/supermarket"
+                                android:text="วัดชลประทานรังสฤษดิ์"
+                                android:textColor="@color/blackLime"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="30dp"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/visit_3"
+                                style="@style/Widget.AppCompat.Button.Borderless"
+                                android:layout_width="308dp"
+                                android:layout_height="173.36dp"
+                                android:background="@drawable/cover_place_3_chentawan"
+                                android:fontFamily="@font/supermarket"
+                                android:textColor="#FFFFFF"
+                                android:textSize="22sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/supermarket"
+                                android:text="ศูนย์วิปัสสนาไร่เชิญตะวัน"
+                                android:textColor="@color/blackLime"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fc_friday_medium"
+                    android:layout_marginLeft="20dp"
+                    android:text="เส้นทางธรรมะ"
+                    android:textColor="@color/blackLime"
+                    android:textSize="28sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbarSize="0dp"
+                    tools:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/visittem_1"
+                            android:layout_width="175.2dp"
+                            android:layout_height="270.4dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/ac_visit_1" />
+
+                        <ImageButton
+                            android:layout_width="175.2dp"
+                            android:layout_height="270.4dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/ac_visit_2" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fc_friday_medium"
+                    android:text="กิจกรรมใกล้ฉัน"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/blackLime"
+                    android:textSize="28sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbarSize="0dp"
+                    tools:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:layout_width="211dp"
+                            android:layout_height="242.5dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/ac_360_tian_4" />
+
+                        <ImageButton
+                            android:layout_width="211dp"
+                            android:layout_height="242.5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/ac_360_tian_3" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="360dp"
+                android:layout_height="173dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="3dp">
+
+                <com.smarteist.autoimageslider.SliderView
+                    android:id="@+id/imageSlider_ac_1"
+                    android:layout_width="395dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    app:sliderAnimationDuration="4"
+                    app:sliderAutoCycleDirection="back_and_forth"
+                    app:sliderAutoCycleEnabled="true"
+                    app:sliderIndicatorAnimationDuration="4"
+                    app:sliderIndicatorGravity="center_horizontal|bottom"
+                    app:sliderIndicatorOrientation="horizontal"
+                    app:sliderIndicatorPadding="3dp"
+                    app:sliderIndicatorRadius="2dp"
+                    app:sliderIndicatorSelectedColor="#FFF"
+                    app:sliderIndicatorUnselectedColor="#C7CBD4"
+                    app:sliderScrollTimeInSec="3"
+                    app:sliderStartAutoCycle="true" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="283dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:fontFamily="@font/fc_friday_medium"
+                    android:text="360° เวียนเทียน"
+                    android:textColor="@color/blackLime"
+                    android:textSize="28sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbarSize="0dp"
+                    tools:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/candle_1"
+                            android:layout_width="211dp"
+                            android:layout_height="242.5dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/ac_360_tian_2" />
+
+                        <ImageButton
+                            android:id="@+id/candle_2"
+                            android:layout_width="211dp"
+                            android:layout_height="242.5dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/ac_360_tian_1" />
+
+                        <ImageButton
+                            android:layout_width="211dp"
+                            android:layout_height="242.5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/ac_360_tian_3" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/fc_friday_medium"
+                    android:layout_marginLeft="20dp"
+                    android:text="สรงน้ำพระ"
+                    android:textColor="@color/blackLime"
+                    android:textSize="28sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbarSize="0dp"
+                    tools:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:layout_width="175.2dp"
+                            android:layout_height="270.4dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/ac_song_1" />
+
+                        <ImageButton
+                            android:layout_width="175.2dp"
+                            android:layout_height="270.4dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/ac_song_2" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="605dp"
+                android:layout_gravity="center"
+                android:background="@drawable/gradient_2"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/fc_friday_medium"
+                    android:text="กิจกรรม เร็วๆนี้"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/blackLime"
+                    android:textSize="28sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="กิจกรรมโฉมใหม่ คุ้มค่าการรอคอย!"
+                    android:textColor="@color/blackLime"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="12sp" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbarSize="2dp"
+                    tools:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageButton
+                            android:layout_width="349dp"
+                            android:layout_height="115dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/ac_coming_1" />
+
+                        <ImageButton
+                            android:layout_width="349dp"
+                            android:layout_height="115dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/ac_coming_2" />
+
+                        <ImageButton
+                            android:layout_width="349dp"
+                            android:layout_height="115dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/ac_coming_3" />
+
+                        <ImageButton
+                            android:layout_width="349dp"
+                            android:layout_height="115dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/ac_coming_4" />
+
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/z_navigation_navigationbar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".Top_Schedule_line">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="393dp"
+        android:layout_height="72dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/icon_schedule_back" />
+
+        <TextView
+            android:layout_width="199dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="10dp"
+            android:text="  Schedule"
+            android:textSize="30dp" />
+
+
+        <Button
+            android:id="@+id/date_table"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/icon_schedule_tablemount" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollView_od1"
+        android:layout_width="393dp"
+        android:layout_height="743dp"
+        android:scrollbarSize="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@color/gray3"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calendarView">
+
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="126dp"
+                android:background="@drawable/img_schedule_line_12" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="126dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/img_schedule_line_14" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="126dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/img_schedule_line_15" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="126dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/img_schedule_line_16" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="126dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/img_schedule_line_18" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="126dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/img_schedule_line_18" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="126dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/img_schedule_line_18" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

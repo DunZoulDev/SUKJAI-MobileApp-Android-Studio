@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main_PD"
+    android:background="@drawable/bg_main_fade">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@drawable/top_bar_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imagenavi"
+            android:layout_width="84dp"
+            android:layout_height="38dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/sukjai_logo_home_text_rebrand" />
+
+        <Button
+            android:id="@+id/bt_schedual"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_toStartOf="@+id/bt_notication"
+            android:background="@drawable/schedule_b" />
+
+        <Button
+            android:id="@+id/bt_notication"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/bt_user"
+            android:background="@drawable/bell_b" />
+
+        <Button
+            android:id="@+id/bt_user"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/pro_b" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="52dp"
+        android:scrollbarSize="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient_1"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <SearchView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/search"
+                    android:iconifiedByDefault="false"
+                    android:queryBackground="@null"
+                    android:queryHint="ค้นหาการแบ่งปัน..." />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="158dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/fc_friday_medium"
+                    android:text="หมวดหมู่"
+                    android:textColor="@color/blackLime"
+                    android:textSize="28sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="126dp"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="121dp"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/topic_donate"
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:background="@drawable/pd_topic_2" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="121dp"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/topic_founda"
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:background="@drawable/pd_topic_1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="121dp"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/topic_volun"
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:background="@drawable/pd_topic_3" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="430dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/fc_friday_medium"
+                    android:text="ระดมทุน"
+                    android:textColor="@color/blackLime"
+                    android:textSize="28dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="397dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageButton
+                        android:layout_width="349dp"
+                        android:layout_height="115dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/fuci1" />
+
+                    <ImageButton
+                        android:layout_width="349dp"
+                        android:layout_height="115dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/fuan2" />
+
+                    <ImageButton
+                        android:layout_width="349dp"
+                        android:layout_height="115dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/fuan1" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="556dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/fc_friday_medium"
+                    android:text="แบ่งปันอย่างยั่งยืน"
+                    android:textColor="@color/blackLime"
+                    android:textSize="28dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="700dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageButton
+                        android:layout_width="349dp"
+                        android:layout_height="115dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/temp1" />
+
+                    <ImageButton
+                        android:layout_width="349dp"
+                        android:layout_height="115dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/hos2" />
+
+                    <ImageButton
+                        android:layout_width="349dp"
+                        android:layout_height="115dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/temp2" />
+
+                    <ImageButton
+                        android:layout_width="349dp"
+                        android:layout_height="115dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/temp3" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="800dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/fc_friday_medium"
+                    android:text="จิตอาสาออนไลน์"
+                    android:textColor="@color/blackLime"
+                    android:textSize="28dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="135dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/pd_volunteer_online_1" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="135dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/pd_volunteer_online_2" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="135dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/pd_volunteer_online_3" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="135dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/pd_volunteer_online_4" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="135dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/pd_volunteer_online_5" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="590dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/fc_friday_medium"
+                    android:text="จิตอาสาที่ยังเปิดรับสมัคร"
+                    android:textColor="@color/blackLime"
+                    android:textSize="28dp" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="452dp"
+                    android:scrollbarSize="2dp"
+                    tools:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="135dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/pd_volunteer_offline_1" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="135dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/pd_volunteer_offline_2" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="135dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/pd_volunteer_offline_3" />
+
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/z_navigation_navigationbar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

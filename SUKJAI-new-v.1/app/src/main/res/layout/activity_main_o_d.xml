@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main_OD"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_main_fade">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@drawable/top_bar_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imagenavi"
+            android:layout_width="84dp"
+            android:layout_height="38dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/sukjai_logo_home_text_rebrand" />
+
+        <Button
+            android:id="@+id/bt_schedual"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_toStartOf="@+id/bt_notication"
+            android:background="@drawable/schedule_b" />
+
+        <Button
+            android:id="@+id/bt_notication"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/bt_user"
+            android:background="@drawable/bell_b" />
+
+        <Button
+            android:id="@+id/bt_user"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/pro_b" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="52dp"
+        android:scrollbarSize="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_gray_bg"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+
+            <SearchView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/search"
+                android:iconifiedByDefault="false"
+                android:queryBackground="@null"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:queryHint="ค้นหาความสุขใจ..." />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fc_friday_medium"
+                    android:text="หมวดหมู่"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/blackLime"
+                    android:textSize="28sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="140dp"
+                    android:scrollbarSize="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:background="@drawable/od_topic_live" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="3dp"
+                                android:text="รายการสด"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:background="@drawable/od_topic_podcast_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="3dp"
+                                android:text="เทปเสียง"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:background="@drawable/od_topic_course" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="3dp"
+                                android:text="คอร์สความรู้"
+                                android:textSize="14dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:background="@drawable/od_topic_speak" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="3dp"
+                                android:text="เสวนา"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:background="@drawable/od_topic_follow" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="3dp"
+                                android:text="ติดตาม"
+                                android:textSize="14dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="40dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:background="@drawable/od_topic_vdo" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="3dp"
+                                android:text="วิดีโอ"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/fc_friday_medium"
+                    android:text="เพลย์ลิสต์"
+                    android:textColor="@color/blackLime"
+                    android:textSize="28dp" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="225dp"
+                    android:scrollbarSize="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="225dp"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp">
+
+                        <ImageButton
+                            android:layout_width="172dp"
+                            android:layout_height="220dp"
+                            android:background="@drawable/od_playlist_1"
+                            android:elevation="19dp" />
+
+                        <ImageButton
+                            android:layout_width="172dp"
+                            android:layout_height="220dp"
+                            android:layout_marginLeft="9dp"
+                            android:background="@drawable/od_playlist_2"
+                            android:elevation="19dp" />
+
+                        <ImageButton
+                            android:layout_width="172dp"
+                            android:layout_height="220dp"
+                            android:layout_marginLeft="9dp"
+                            android:background="@drawable/od_playlist_3"
+                            android:elevation="19dp" />
+
+                        <ImageButton
+                            android:layout_width="172dp"
+                            android:layout_height="220dp"
+                            android:layout_marginLeft="9dp"
+                            android:layout_marginRight="40dp"
+                            android:background="@drawable/od_playlist_4"
+                            android:elevation="19dp"/>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="212dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fc_friday_medium"
+                    android:text="วิทยากร"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/blackLime"
+                    android:textSize="28sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="223dp"
+                    android:scrollbarSize="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="105dp"
+                                android:layout_height="105dp"
+                                android:background="@drawable/speaker_mom_jah" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="4dp"
+                                android:text="แม่ชีศันสนีย์"
+                                android:textColor="@color/blackLime"
+                                android:textSize="14dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="105dp"
+                                android:layout_height="105dp"
+                                android:background="@drawable/speaker_tan_vo" />
+
+                            <TextView
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="4dp"
+                                android:text="พระเมธีวชิโรดม (ว.วชิรเมธี)"
+                                android:textColor="@color/blackLime"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="105dp"
+                                android:layout_height="105dp"
+                                android:background="@drawable/speaker_pasin" />
+
+                            <TextView
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="4dp"
+                                android:text="พศิน อินทรวงค์"
+                                android:textColor="@color/blackLime"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="40dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="105dp"
+                                android:layout_height="105dp"
+                                android:background="@drawable/speaker_dungtrin" />
+
+                            <TextView
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="4dp"
+                                android:text="ดังตฤณ"
+                                android:textColor="@color/blackLime"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="360dp"
+                android:layout_height="173dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="3dp">
+
+                <com.smarteist.autoimageslider.SliderView
+                    android:id="@+id/imageSlider_od_1"
+                    android:layout_width="395dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    app:sliderAnimationDuration="4"
+                    app:sliderAutoCycleDirection="back_and_forth"
+                    app:sliderAutoCycleEnabled="true"
+                    app:sliderIndicatorAnimationDuration="4"
+                    app:sliderIndicatorGravity="center_horizontal|bottom"
+                    app:sliderIndicatorOrientation="horizontal"
+                    app:sliderIndicatorPadding="3dp"
+                    app:sliderIndicatorRadius="2dp"
+                    app:sliderIndicatorSelectedColor="#FFF"
+                    app:sliderIndicatorUnselectedColor="#C7CBD4"
+                    app:sliderScrollTimeInSec="3"
+                    app:sliderStartAutoCycle="true" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fc_friday_medium"
+                    android:text="เทปเสียง"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/blackLime"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="เทปเสียงน่าสนใจ"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/blackLime"
+                    android:textSize="12sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="212dp"
+                    android:scrollbarSize="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="262dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/ex_od_1"
+                            android:layout_width="201dp"
+                            android:layout_height="190dp"
+                            android:background="@drawable/od_podcast_1" />
+
+                        <ImageButton
+                            android:id="@+id/ex_od_2"
+                            android:layout_width="201dp"
+                            android:layout_height="190dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/od_podcast_2" />
+
+                        <ImageButton
+                            android:id="@+id/ex_od_3"
+                            android:layout_width="201dp"
+                            android:layout_height="190dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="40dp"
+                            android:background="@drawable/od_podcast_3" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="487dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/fc_friday_medium"
+                    android:text="รายการสด"
+                    android:textColor="@color/blackLime"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="รวมรายการสดประจำเดือนนี้"
+                    android:textColor="@color/blackLime"
+                    android:textSize="12sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="464dp"
+                    android:layout_marginTop="10dp"
+                    android:scrollbarSize="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="425dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="205dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="201dp"
+                                android:layout_height="197dp"
+                                android:background="@drawable/od_live_1" />
+
+                            <ImageButton
+                                android:layout_width="201dp"
+                                android:layout_height="197dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/od_live_2" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="205dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="201dp"
+                                android:layout_height="197dp"
+                                android:background="@drawable/od_live_3" />
+
+                            <ImageButton
+                                android:layout_width="201dp"
+                                android:layout_height="197dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/od_live_4" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="205dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="201dp"
+                                android:layout_height="197dp"
+                                android:background="@drawable/od_live_5" />
+
+                            <ImageButton
+                                android:layout_width="201dp"
+                                android:layout_height="197dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/od_live_6" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="205dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="40dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="201dp"
+                                android:layout_height="197dp"
+                                android:background="@drawable/od_live_7" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_blur_4"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fc_friday_medium"
+                    android:text="เสวนา"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/White"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="แลกเปลี่ยน ธรรมะ ความรู้ ที่น่าสุขใจ!"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/White"
+                    android:textSize="12sp" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scrollbarSize="2dp"
+                    tools:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageButton
+                            android:layout_width="349dp"
+                            android:layout_height="125dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/od_recom_new_1" />
+
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fc_friday_medium"
+                    android:text="รายการเร็วๆนี้"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="25sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="434dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageButton
+                        android:id="@+id/img_od_comingsoon_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="128dp"
+                        android:elevation="5dp"
+                        android:translationZ="5dp"
+                        android:background="@drawable/od_comingsoon_length_1"
+                        android:contentDescription="@string/todo" />
+
+
+                    <ImageButton
+                        android:id="@+id/img_od_comingsoon_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="128dp"
+                        android:layout_marginTop="10dp"
+                        android:elevation="5dp"
+                        android:translationZ="5dp"
+                        android:background="@drawable/od_comingsoon_length_2" />
+
+
+                    <ImageButton
+                        android:id="@+id/img_od_comingsoon_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="128dp"
+                        android:layout_marginTop="10dp"
+                        android:elevation="5dp"
+                        android:translationZ="5dp"
+                        android:background="@drawable/od_comingsoon_length_3" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/gradient_2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:fontFamily="@font/fc_friday_medium"
+                    android:text="รายการย้อนหลัง"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="25sp" />
+
+
+                <ImageButton
+                    android:id="@+id/img_od_old_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:elevation="5dp"
+                    android:translationZ="5dp"
+                    android:background="@drawable/od_old_length_1" />
+
+                <ImageButton
+                    android:id="@+id/img_od_old_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:elevation="5dp"
+                    android:translationZ="5dp"
+                    android:background="@drawable/od_old_length_2" />
+
+                <ImageButton
+                    android:id="@+id/img_od_old_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:elevation="5dp"
+                    android:translationZ="5dp"
+                    android:background="@drawable/od_old_length_3" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/z_navigation_navigationbar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

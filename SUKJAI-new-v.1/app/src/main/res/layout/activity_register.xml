@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register"
+    android:background="@drawable/bglogin">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bgtextlogin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/supermarket"
+                android:text="ลงทะเบียน"
+                android:textColor="@color/black_blue_text"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView13"
+                android:layout_alignStart="@+id/textView13"
+                android:layout_alignLeft="@+id/textView13"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="-5dp"
+                android:fontFamily="@font/supermarket"
+                android:text="กรุณากรอกข้อมูล เพื่อลงทะเบียน"
+                android:textColor="#767171"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/textView19"
+                android:layout_alignStart="@+id/textView19"
+                android:layout_alignLeft="@+id/textView19"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="85dp"
+                android:background="@drawable/bguser"
+                android:ems="10"
+                android:fontFamily="@font/supermarket"
+                android:hint="   ชื่อ"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:textColorHint="#767171"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/surname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/textView19"
+                android:layout_alignStart="@+id/textView19"
+                android:layout_alignLeft="@+id/textView19"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="85dp"
+                android:background="@drawable/bguser"
+                android:ems="10"
+                android:fontFamily="@font/supermarket"
+                android:hint="   นามสกุล"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:textColorHint="#767171"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/textView19"
+                android:layout_alignStart="@+id/textView19"
+                android:layout_alignLeft="@+id/textView19"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="85dp"
+                android:background="@drawable/bguser"
+                android:ems="10"
+                android:fontFamily="@font/supermarket"
+                android:hint="   อีเมล"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:textColorHint="#767171"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="40dp"
+                android:background="#D9D9D9" />
+
+            <EditText
+                android:id="@+id/phonenum"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/textView19"
+                android:layout_alignStart="@+id/textView19"
+                android:layout_alignLeft="@+id/textView19"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="85dp"
+                android:background="@drawable/bguser"
+                android:ems="10"
+                android:fontFamily="@font/supermarket"
+                android:hint="   เบอร์โทรศัพท์"
+                android:inputType="phone"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:textColorHint="#767171"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/textView19"
+                android:layout_alignStart="@+id/textView19"
+                android:layout_alignLeft="@+id/textView19"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="85dp"
+                android:background="@drawable/bguser"
+                android:ems="10"
+                android:fontFamily="@font/supermarket"
+                android:hint="   รหัสผ่าน"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:textColorHint="#767171"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/repassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/textView19"
+                android:layout_alignStart="@+id/textView19"
+                android:layout_alignLeft="@+id/textView19"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="85dp"
+                android:background="@drawable/bguser"
+                android:ems="10"
+                android:fontFamily="@font/supermarket"
+                android:hint="   ยืนยันรหัสผ่าน"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:textColorHint="#767171"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <Button
+                    android:id="@+id/confirm"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Password"
+                    android:layout_alignStart="@+id/Password"
+                    android:layout_alignLeft="@+id/Password"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/buttonlogin"
+                    android:fontFamily="@font/supermarket"
+                    android:text="ยืนยัน"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    app:backgroundTint="@color/black_blue_text" />
+
+                <Button
+                    android:id="@+id/back"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/login"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bgtextregis"
+                    android:fontFamily="@font/supermarket"
+                    android:text="ยกเลิก"
+                    android:textColor="@color/gray_text"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

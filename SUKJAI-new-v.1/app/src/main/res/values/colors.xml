@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="appointmed">#476EFF</color>
+    <color name="gray">#808080</color>
+    <color name="green_old">#24ADA4</color>
+    <color name="text">#7F7F7F</color>
+    <color name="blue">#0000FF</color>
+
+
+    <color name="cotriage_color">#3BC3AD</color>
+
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="yellow">#FFEE6C</color>
+    <color name="yellow1">#FF9800</color>
+    <color name="green">#D0E7A3</color>
+
+
+    <!--colors for light mode-->
+    <color name="contentBodyColor">#FCFCFC</color>
+    <color name="contentTextColor">#020000</color>
+    <color name="imageBorderColor">#E01E7A</color>
+    <color name="miniTitle">#2A2E43</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="overlay_dark_10">#1A000000</color>
+    <color name="overlay_dark_20">#33000000</color>
+    <color name="icon_tintclr">#a9885d</color>
+
+
+    <color name="gray1">#C7CBD4</color>
+    <color name="gray1white">#F9F9F9</color>
+    <color name="White">#FFF</color>
+    <color name="Warm_orange">#F78E03</color>
+    <color name="blackLime">#2C2C2C</color>
+    <color name="Mango_green">#D3EB81</color>
+    <color name="gray2">#F8F8F8</color>
+    <color name="gray3">#F3F3F3</color>
+    <color name="gray4">#F2F2F2</color>
+
+    <color name="brown_word">#654D40</color>
+    <color name="mango_bar">#DDEF99</color>
+    <color name="gold_brown_icon">#878768</color>
+    <color name="gray_text">#767171</color>
+    <color name="black_blue_text">#3B4354</color>
+    <color name="gray_bg">#F0F0F0</color>
+
+    <color name="mango_center_bar">#E6ECC1</color>
+
+</resources>

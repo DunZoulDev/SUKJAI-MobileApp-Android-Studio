@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main_Menu"
+    android:background="@color/gray_bg">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@drawable/top_bar_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imagenavi"
+            android:layout_width="84dp"
+            android:layout_height="38dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/sukjai_logo_home_text_rebrand" />
+
+        <Button
+            android:id="@+id/bt_schedual"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_toStartOf="@+id/bt_notication"
+            android:background="@drawable/schedule_b" />
+
+        <Button
+            android:id="@+id/bt_notication"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/bt_user"
+            android:background="@drawable/bell_b" />
+
+        <Button
+            android:id="@+id/bt_user"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/pro_b" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="52dp"
+        android:scrollbarSize="0dp"
+        android:background="@color/gray_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/gradient_1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <Button
+                    android:id="@+id/profile"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/profilec" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/name_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fcminimalbold"
+                        android:padding="3dp"
+                        android:text="บัญชีเยี่ยมชม"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/see_user_data"
+                        android:layout_width="100dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/search"
+                        android:fontFamily="@font/fcminimalregular"
+                        android:layout_gravity="center_vertical"
+                        android:padding="3dp"
+                        android:text="   ดูข้อมูลผู้ใช้งาน  >" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray4"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:layout_width="200dp"
+                        android:layout_height="216dp"
+                        android:background="@drawable/m1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=".."
+                        android:textColor="#f9f9f9"
+                        android:textSize="7sp" />
+
+                    <ImageButton
+                        android:layout_width="200dp"
+                        android:layout_height="104dp"
+                        android:background="@drawable/m7" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=".."
+                        android:textColor="#f9f9f9"
+                        android:textSize="7sp" />
+
+                    <ImageButton
+                        android:layout_width="200dp"
+                        android:layout_height="104dp"
+                        android:background="@drawable/m8" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=".."
+                    android:textColor="#f9f9f9"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="69dp"
+                        android:background="@drawable/m2" />
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="69dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/m3" />
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="69dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/m4" />
+
+                    <ImageButton
+                        android:layout_width="170dp"
+                        android:layout_height="69dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/m6" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/about_sukjai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bgtextregis"
+                android:fontFamily="@font/supermarket"
+                android:text="เกี่ยวกับสุขใจ"
+                android:textColor="@color/gray_text"
+                android:textSize="20sp" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/z_navigation_navigationbar"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

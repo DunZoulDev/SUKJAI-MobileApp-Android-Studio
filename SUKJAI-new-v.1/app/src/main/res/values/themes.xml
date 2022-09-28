@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SUKJAI" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/gold_brown_icon</item>
+        <item name="colorPrimaryDark">@color/mango_bar</item>
+        <item name="colorAccent">@color/gold_brown_icon</item>
+        <item name="font">@font/fc_subject_regular</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Theme.SUKJAI.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Test_API.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.Test_API.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
